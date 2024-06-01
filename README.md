@@ -60,6 +60,4 @@ Creating a Fantasy Football League dashboard using Streamlit. Streamlit is an op
     
     poetry run streamlit run app.py
 
-  You can now view Streamlit app in your browser.
-
-  Local URL: http://localhost:8501
+  You can now view Streamlit app in your browser on : **http://localhost:8501**
