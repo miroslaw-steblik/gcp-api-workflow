@@ -1,2 +1,3 @@
+# For Google Functions
 pandas
-googl-cloud-storage
+google-cloud-storage

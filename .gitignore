@@ -1,0 +1,5 @@
+.streamlit/
+poetry.lock
+.credentils/
+.env
+

@@ -1,7 +1,12 @@
-# Loading API Data into Google BigQuery with Cloud Functions and Scheduler
+# Streamlit Fantasy Football League
+
+The data is stored in Google Cloud Platform (GCP), and we use GCP's Cloud Functions for running the code that collects and processes the data. The processed data is then uploaded to BigQuery, from where it is fetched and displayed on the Streamlit dashboard.
+
+## Loading API Data into Google BigQuery with Cloud Functions and Scheduler
 
 Workflow and Google Cloud functions we’ll be using:
 ![Architecture Diagram](./resources/flow.png)
+
 ## Prerequisites
 
 Google Cloud Project with neccessary IAM permissions.
@@ -38,3 +43,21 @@ Pub/Sub (publish/subscribe) is a secure service that allows communication betwee
 
 ### Uploading to BigQuery
 
+1. Navigate to BigQuery, select your Project and hit the “Create Dataset” button 
+2. Go to Create Table
+
+![Create Table](./resources/create_table.png)
+
+**Done!**
+
+## Dashboard
+
+Creating a Fantasy Football League dashboard using Streamlit. Streamlit is an open-source Python library that makes it easy to create custom web apps for machine learning and data science.
+
+> Run app :
+    
+    poetry run streamlit run app.py
+
+  You can now view Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
