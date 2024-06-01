@@ -26,7 +26,7 @@ Now let’s create the Cloud Function that we’ll use to run this code. Navigat
 1. Add function name and choose region
 2. Add Pub/Sub as Trigger & create new Topic
 3. Click Next
-4. Choose Inline Edito and copy `load_gcp.py` script into `main.py`
+4. Choose Inline Editor and copy `load_gcp.py` script into `main.py`, update project and bucket name
 5. Add requirement.txt
 6. Test function and Deploy
 
@@ -45,8 +45,10 @@ Pub/Sub (publish/subscribe) is a secure service that allows communication betwee
 
 1. Navigate to BigQuery, select your Project and hit the “Create Dataset” button 
 2. Go to Create Table
+3. Select “External table” from the Table type dropdown — this allows BigQuery to “stream” the data from Storage in real time, rather than making a static copy.
 
 ![Create Table](./resources/create_table.png)
+
 
 **Done!**
 
