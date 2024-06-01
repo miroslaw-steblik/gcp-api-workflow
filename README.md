@@ -1,16 +1,11 @@
 # Loading API Data into Google BigQuery with Cloud Functions and Scheduler
 
+Workflow and Google Cloud functions we’ll be using:
+![Architecture Diagram](./resources/flow.png)
 ## Prerequisites
 
-> Google Cloud Project with neccessary IAM permission:
+Google Cloud Project with neccessary IAM permissions.
 
-    - BigQuery Data Editor
-    - BigQuery User
-    - Storage Admin 
-
-Diagram showing the workflow and Google Cloud functions we’ll be using:
-
-![Architecture Diagram](./resources/flow.png)
 
 ## Workflow
 API used for this project:
@@ -24,7 +19,7 @@ Script simply imports the **`teams`** endpoint data from our API location into a
 Now let’s create the Cloud Function that we’ll use to run this code. Navigate to the [Cloud Functions](https://console.cloud.google.com/functions) and click Create Function.
 
 1. Add function name and choose region
-2. Add Pub/Sub as Trigger
+2. Add Pub/Sub as Trigger & create new Topic
 3. Click Next
 4. Choose Inline Edito and copy `load_gcp.py` script into `main.py`
 5. Add requirement.txt
