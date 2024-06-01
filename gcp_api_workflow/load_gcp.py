@@ -8,6 +8,8 @@ GCP_BUCKET_NAME = '<bucket-name>'
 
 url = 'https://fantasy.premierleague.com/api/bootstrap-static/'
 endpoint = 'teams'
+
+#gcp bucket filename
 filename = 'fantasy_league_teams.csv'
 
 
